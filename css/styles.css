@@ -32,6 +32,8 @@ body{
 
 /* #endregion */
 
+/* #region typography */
+
 h1, h2, h3{
   color: var(--color-headings) ;
   margin-bottom: 1rem;
@@ -69,3 +71,35 @@ p{
     font-size: 2.4rem;
   }
 }
+
+
+/* #endregion */
+
+/* #region links */
+a{
+  text-decoration: none;
+}
+.link-arrow{
+ color: var(--color-accent);
+ text-transform: uppercase;
+ font-size: 2rem;
+ font-weight: 800;
+}
+
+.link-arrow::after{
+  content: '-->';
+  margin-left: 5px;
+  transition: margin .15s cubic-bezier(.75,.02,0,.99);
+}
+/* #endregion */
+
+.link-arrow:hover::after{
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px){
+  .link-arrow{
+    font-size: 1.5rem;
+  }
+}
+
