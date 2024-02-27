@@ -91,7 +91,6 @@ a{
   margin-left: 5px;
   transition: margin .15s cubic-bezier(.75,.02,0,.99);
 }
-/* #endregion */
 
 .link-arrow:hover::after{
   margin-left: 10px;
@@ -102,4 +101,37 @@ a{
     font-size: 1.5rem;
   }
 }
+/* #endregion */
 
+
+/* #region badge */
+.badge{
+  border-radius: 20px;
+  font-weight: 600;
+  padding: .5rem 2rem;
+  white-space: nowrap;
+}
+
+.badge--primary{
+  background-color: var(--color-primary);
+  color: white;
+}
+.badge--secondary{
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.badge--small{
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px){
+.badge{
+  font-size: 1.5rem;
+}
+.badge--small{
+  font-size: 1.2rem;
+}
+}
+
+/* #endregion */
