@@ -175,7 +175,6 @@ a{
 .icon--primary{
   fill: var(--color-primary);
 }
-/* #endregion */
 
 .icon-container{
   background: #f3f9fa;
@@ -186,3 +185,49 @@ a{
   justify-content: center;
   align-items: center;
 }
+/* #endregion */
+
+
+
+/* #region buttons */
+.btn{
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+  border: 0;
+  border-radius: 40px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.btn:hover{
+  transition: filter .2s cubic-bezier(.75,.02,.19,1);
+  filter: brightness(.9);
+}
+.btn--primary{
+  background: var(--color-primary);
+  color: rgb(255, 255, 255);
+}
+.btn--secondary{
+  background: var(--color-secondary);
+  color: rgb(255, 255, 255);
+}
+.btn--accent{
+  background: var(--color-accent);
+  color: rgb(255, 255, 255);
+}
+
+.btn--block{
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px){
+  .list--tick .list_item{
+    padding-left: 0;
+  }
+}
+/* #endregion */
