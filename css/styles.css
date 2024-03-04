@@ -326,3 +326,20 @@ a{
   right: 5%;
 }
 /* #endregion */
+
+
+.btn--container{
+  display: flex;
+  justify-content: space-around;
+  background: #00d9ff1b;
+  width: 40rem;
+  height: 20rem;
+}
+
+.btn--container .btn--container__b1{
+  display: flex;
+  background: #1b0760;
+  width: 20%;
+  height: 20%;
+}
+ 
